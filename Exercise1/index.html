@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise1</title>
+    <link href="./exercise1.css" rel="stylesheet" type="text/css"/>
+    <script src="./exercise1.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+    <div class="column sidebar">
+        <h2>SideBar</h2>
+        <h3><a href="https://fr.wikipedia.org/wiki/Bulls_de_Chicago" target="_blank">Bulls</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Heat_de_Miami" target="_blank">Heat</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Nets_de_Brooklyn" target="_blank">Nets</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Spurs_de_San_Antonio" target="_blank">Spurs</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Warriors_de_Golden_State" target="_blank">Warriors</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Rockets_de_Houston" target="_blank">Rockets</a></h3>
+        <h3><a href="https://fr.wikipedia.org/wiki/Lakers_de_Los_Angeles" target="_blank">Lakers</a></h3>
+    </div>
+    <div class="column formin" onforminput="">
+        <!-- 
+            prenom nom date email message 
+        -->
+        <h2>FormIn</h2>
+        <form>
+            <p>
+                <label for="firstname">
+                    <span>First Name :</span>
+                </label>
+                <input type="text" id="firstname" placeholder="John" oninput="myFunction('First Name', 'firstname')"/>
+            </p>
+            <p>
+                <label for="lastname">
+                    <span>Last Name :</span>
+                </label>
+                <input type="text" id="lastname" placeholder="Doe" oninput="myFunction('Last Name', 'lastname')"/>
+            </p>
+            <p>
+                <label for="date">
+                    <span>Date :</span>
+                </label>
+                <input type="text" id="date" placeholder="mm/dd/yyyy" oninput="myFunction('Date', 'date')"/>
+            </p>
+            <p>
+                <label for="email">
+                    <span>Email :</span>
+                </label>
+                <input type="text" id="email" placeholder="john.doe@email.com" oninput="myFunction('Email', 'email')"/>
+            </p>
+            <p>
+                <label for="message">
+                    <span>Message :</span>
+                </label>
+                <input type="text" id="message" placeholder="Hi guys" oninput="myFunction('Message', 'message')"/>
+            </p>
+            <p>
+                <button type="submit" id="submit">Submit</button>
+            </p>
+        </form>
+        
+    </div>
+    <div class="column formout">
+        <h2>FormOut</h2>
+        <h3 id="firstnameout"></h3>
+        <h3 id="lastnameout"></h3>
+        <h3 id="dateout"></h3>
+        <h3 id="emailout"></h3>
+        <h3 id="messageout"></h3>
+    </div>
+</body>
+
+</html>
