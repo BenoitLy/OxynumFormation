@@ -7,7 +7,7 @@ body {
 
 .column {
     float: left;
-    height: 600px;
+    height: 100vh;
 }
 
 .sidebar {
